@@ -1,5 +1,6 @@
 const express = require('express');
  
+const bodyParser = require('body-parser');
 
 console.log('in server.js! 👹');
 const app = express();
@@ -8,11 +9,8 @@ app.use(express.static('./server/public'));
 app.listen(3000, () => {
     console.log("We are live! :ls 😮");
 });
+app.use(bodyParser.urlencoded({ extended: true }));
 
-
-// app.get('/comments',(req,res) => { console.log('Jimmy wants dem comments')
-// res.send(comments);
-// })
 
 
 

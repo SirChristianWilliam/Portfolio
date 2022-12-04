@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/x-icon" href="../public/images/star.jpeg">
+    <script src="jquery.js"></script>
     <script src="client.js"></script>
     <title>Chris' Portfolio</title>
 </head>
@@ -15,10 +16,10 @@
         <h1 id="toTop">Christian Maki<br><span>Software Engineer</span></h1>
         
         <nav>
-            <a href="www.runescape.com">LinkedIn</a>
-            <a href="www.runescape.com">Github</a>
-            <a href="www.runescape.com">Email</a>
-            <a href="www.runescape.com">Prentus</a>
+            <a href="https://www.linkedin.com/in/christian-maki/">LinkedIn</a>
+            <a href="https://github.com/SirChristianWilliam">Github</a>
+            <a href="mailto:chrismaki123@gmail.com">Email</a>
+            <!-- <a href="https://app.prentus.co/main/member/profile">Prentus</a> -->
         </nav>
     </Header>
     <main id="myMain">
@@ -42,7 +43,10 @@
             anything that gets me outside. You'll notice I've included examples
             of past projects I've made that I'm proud to showcase to you. Please feel free to look around!
         </p>
+
     </section>
+    <hr class="hrClass">
+
         <section id="myJourney">
             <h1>Currently</h1>
             <p id="myJourneyP">
@@ -64,6 +68,7 @@
 
         <section id="missingLink" >
             <h1>Missing Link</h1>
+
         </section>
 <div class="cara">
         <section class="carousel" aria-label="Gallery">
@@ -73,7 +78,7 @@
                   class="carousel__slide">
             <img src="../public/images/ML1.png" class="MLPic"/>
                 <div class="carousel__snapper">
-                  <a href="#carousel__slide4"
+                  <a href="#carousel__slide8"
                      class="carousel__prev">Go to last slide</a>
                   <a href="#carousel__slide2"
                      class="carousel__next">Go to next slide !!!!</a>
@@ -82,6 +87,7 @@
               <li id="carousel__slide2"
                   tabindex="0"
                   class="carousel__slide">
+                  <img src="../public/images/ML2.png" class="MLPic"/>
                 <div class="carousel__snapper"></div>
                 <a href="#carousel__slide1"
                    class="carousel__prev">Go to previous slide</a>
@@ -91,6 +97,7 @@
               <li id="carousel__slide3"
                   tabindex="0"
                   class="carousel__slide">
+                  <img src="../public/images/ML3.png" class="MLPic"/>
                 <div class="carousel__snapper"></div>
                 <a href="#carousel__slide2"
                    class="carousel__prev">Go to previous slide</a>
@@ -100,6 +107,7 @@
               <li id="carousel__slide4"
                   tabindex="0"
                   class="carousel__slide">
+                  <img src="../public/images/ML4.png" class="MLPic"/>
                 <div class="carousel__snapper"></div>
                 <a href="#carousel__slide3"
                    class="carousel__prev">Go to previous slide</a>
@@ -110,8 +118,7 @@
               <li id="carousel__slide5"
                   tabindex="0"
                   class="carousel__slide">
-            <!-- <img src="../public/images/ML1.png" class="MLPic"/> -->
-                <div class="carousel__snapper">
+                  <img src="../public/images/ML5.png" class="MLPic"/>                <div class="carousel__snapper">
                   <a href="#carousel__slide4"
                      class="carousel__prev">Go to last slide</a>
                   <a href="#carousel__slide6"
@@ -121,6 +128,7 @@
               <li id="carousel__slide6"
                   tabindex="0"
                   class="carousel__slide">
+                  <img src="../public/images/ML6.png" class="MLPic"/>
                 <div class="carousel__snapper"></div>
                 <a href="#carousel__slide5"
                    class="carousel__prev">Go to previous slide</a>
@@ -130,6 +138,7 @@
               <li id="carousel__slide7"
                   tabindex="0"
                   class="carousel__slide">
+                  <img src="../public/images/ML7.png" class="MLPic"/>
                 <div class="carousel__snapper"></div>
                 <a href="#carousel__slide6"
                    class="carousel__prev">Go to previous slide</a>
@@ -139,30 +148,61 @@
               <li id="carousel__slide8"
                   tabindex="0"
                   class="carousel__slide">
+                  <img src="../public/images/ML8.png" class="MLPic"/>
                 <div class="carousel__snapper"></div>
                 <a href="#carousel__slide7"
-                   class="carousel__prev">Go to previous slide</a>
-                <a href="#carousel__slide9"
-                   class="carousel__next">Go to first slide</a>
-              </li>
-              <li id="carousel__slide9"
-                  tabindex="0"
-                  class="carousel__slide">
-                <div class="carousel__snapper"></div>
-                <a href="#carousel__slide8"
                    class="carousel__prev">Go to previous slide</a>
                 <a href="#carousel__slide1"
                    class="carousel__next">Go to first slide</a>
               </li>
+             
             </ol>
-           
-            
+            <span id="footerSlideButton">Learn more</span>
+ 
           </section>
 
 </div>
 
 
-
+<div id="footerSlideContainer">
+    
+	<div id="footerSlideContent">
+		<div id="footerSlideText">
+			<p id="moreAboutML">
+                My dad died from ALS in 2020. I spent
+                countless hours researching the disease. However much I 
+                looked, I was never satisfied with the results. What I realized 
+                is that there is nowhere that explains anything about the <span class="person">PERSON</span>
+                who has ALS. There are symptoms, and plenty of websites telling 
+                you how there's no cure, but nothing to draw any real conclusions 
+                of what could potentially cause it in the first place. That's why I
+                created Missing Link. Any user who has been diagnosed with a disease 
+                or condition will be given an access code from their doctor. On my website,
+                they will then search up the condition they have and enter the code 
+                for it. The user will have a profile page where they can navigate to 
+                the questions page. This page is intended to have hundreds if not 
+                thousands of questions. The questions encompass the user's symptoms, but 
+                more importantly, data about the user themselves. Hair color, what city they grew up, 
+                how many hours of sleep they get per night, do they drink coffee, or 
+                alcohol, or smoke marijuana. Individually, these questions are seemingly 
+                unimportant. However, if hundreds of thousands of users are diagnosed 
+                with ALS and answer these questions, there is a possibility of discovering 
+                a connection, or "missing link" between users for that particular condition. 
+                On the results page, if one user's question/answer pair is identical to 
+                another user's question/answer pair, that row will be combined and the match count 
+                will increase by 1. This allows compression of the data and provides an excellent 
+                filter to compare amongst the users. This app has a lot of real-world 
+                potential, and I do hope to expand on it over the years until it's production ready. 
+                Imagine if 90% of those with ALS had all started drinking alcohol before the age 
+                of ten. How would we know this? Why would anyone even think to ask that question 
+                of each patient? Missing Link is aptly named as it's looking for just that, for finding 
+                those odd connections in an attempt to lead researchers in new directions, 
+                as the old ones haven't been working.  
+               </p>
+		</div>
+	</div>
+</div>
+<hr>
 
     </main>
 

@@ -25,11 +25,12 @@
             <!-- <a href="https://app.prentus.co/main/member/profile">Prentus</a> -->
         </nav>
     </Header>
+    
     <main id="myMain">
-        <section id="aboutMe">
-            <img src="../public/images/ballin.jpg" id="proPic" />
+        <section id="aboutMe" >
+            <img src="../public/images/ballin.jpg" id="proPic" class="header-overlay"/>
             <h2>Who am I?</h2>
-            <p>Welcome to my page!
+            <p class="header-overlay2">Welcome to my page!
                 I'm twenty-seven years old and I have been professionally coding/programming for over
                 two years now. I began my journey as a Software Developer back
                 when I was ten years old, creating fun beginner projects on
@@ -70,7 +71,7 @@
         </section>
 
         <section id="missingLink">
-            <h1>Missing Link</h1>
+            <h1 class="h3additional">Missing Link</h1>
 
         </section>
         <div class="cara">
@@ -171,7 +172,7 @@
             </section>
 
             <section class="MLvideo">
-
+                My Presentation for Missing Link
                 <iframe>
                     Video from youtube
                 </iframe>
@@ -182,7 +183,8 @@
 
         
         <hr>
-        <h2 id="additonal">Additional Projects</h2>
+        <h2 class="additional" style="text-decoration:underline">Additional Projects:</h2>
+        <h3 class="additional h3additional">Redux Surveys</h3>
         <section id="threeMoreContainer">
             <div id="footerSlideContainer1">
 
@@ -201,7 +203,7 @@
                     </div>
                 </div>
             </div>
-            <div>
+            
                 <div class="cara1">
                     <section class="carousel1" aria-label="Gallery">
                         <ol class="carousel__viewport1">
@@ -246,39 +248,104 @@
                             </li>
                         </ol>
                         
-        
-             <!-- </div>
-            <div>
-             </div>
-            <div>
-             </div> -->
-             <p id="footerSlideButton1">Learn more</p>
+             <span id="footerSlideButton1">Learn more</span>
              
         </section>
-        
-    </section>
+    </div>
         <section class="moreExamples">
             <div>
-
+                <p class="overPic">
+                    This was my first major project using Jquery! ⬇️
+                    </p>
                 <img />
+               
             </div>
             <div>
+                <p class="overPic overPic2">
+                    Here's my stylish to-do list! I'd definitely try out an app that looks like this!
+                    </p>
                 <img  />
 
             </div>
         </section>
 
+        <!-- movies section -->
+        <span class="movieSagas">
+        <h1>↓ Netclips ↓</h1>
+        </span>
+        <div id="footerSlideContainer11">
+
+            <div id="footerSlideContent11">
+                <div id="footerSlideText11">
+                    <p id="moreAboutML11">
+                       Ah yes, Netclips. This project is a simple movie view/add application. 
+                       It heavily relies on Redux, Sagas, React, 
+                       and a SQL database with multiple tables which require "many-to-many" to join their data.
+                       This project was very useful in preparing me for "Missing Link", as that project deals 
+                       with very complicated "many-to-many" table joins. I am very happy with how this app 
+                       turned out, functionality aside. The styling is great, and the hover/active effects I've included 
+                       really flesh it out as a whole. The background header color actually subtly changes 
+                       color tones over a short period of time, but if you're not looking for it 
+                       you might miss it! It's also viewport responsive. I try to build single-page-applications
+                        with the user experience in mind, 
+                       first and foremost, and you can definitely feel that when interacting on the pages.
+                       (You also may notice the genres for many of the titles are not correct, that's okay).
+                    
+                    </p>
+                </div>
+            </div>
+        </div>
+            <div class="cara11">
+                
+                <section class="carousel11" aria-label="Gallery">
+                    <ol class="carousel__viewport11">
+                        <li id="carousel__slide111" tabindex="0" class="carousel__slide11">
+                            <img src="../public/images/netclips1.png" class="MLPic" />
+                            <div class="carousel__snapper11">
+                                <a href="#carousel__slide511" class="carousel__prev11">Go to last slide</a>
+                                <a href="#carousel__slide211" class="carousel__next11">Go to next slide !!!!</a>
+                            </div>
+                        </li>
+                        <li id="carousel__slide211" tabindex="0" class="carousel__slide11">
+                            <img src="../public/images/netclips2.png" class="MLPic" />
+                            <div class="carousel__snapper11"></div>
+                            <a href="#carousel__slide111" class="carousel__prev11">Go to previous slide</a>
+                            <a href="#carousel__slide311" class="carousel__next11">Go to next slide !!!!</a>
+                        </li>
+                        <li id="carousel__slide311" tabindex="0" class="carousel__slide11">
+                            <img src="../public/images/netclips3.png" class="MLPic" />
+                            <div class="carousel__snapper11"></div>
+                            <a href="#carousel__slide211" class="carousel__prev11">Go to previous slide</a>
+                            <a href="#carousel__slide411" class="carousel__next11">Go to next slide !!!!</a>
+                        </li>
+                        <li id="carousel__slide411" tabindex="0" class="carousel__slide11">
+                            <img src="../public/images/netclips4.png" class="MLPic" />
+                            <div class="carousel__snapper11"></div>
+                            <a href="#carousel__slide311" class="carousel__prev11">Go to previous slide</a>
+                            <a href="#carousel__slide511" class="carousel__next11">Go to first slide</a>
+                        </li>
+    
+                        <li id="carousel__slide511" tabindex="0" class="carousel__slide11">
+                            <img src="../public/images/netclips5.png" class="MLPic" />
+                            <div class="carousel__snapper11">
+                                <a href="#carousel__slide411" class="carousel__prev11">Go to last sliderrrr</a>
+                                <a href="#carousel__slide111" class="carousel__next11">Go to next slide !!!!</a>
+                            </div>
+                        </li>
+                       
+                    </ol>
+
+                    <span id="footerSlideButton11">Learn more</span>
+
+    </section>
 
     </main>
-
-
 
     <footer id="myFooter">
         <h3> Please feel free to reach out! </h3>
         <a href="#toTop" id="toTop">To top ⬆</a>
 
     </footer>
-
 
 </body>
 

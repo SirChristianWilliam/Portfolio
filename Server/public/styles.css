@@ -379,8 +379,332 @@ box-shadow:0px 0px 5px white;
 #toTop {
     color:white;
 }
+#toTop::before {  
+    transform: scaleX(0);
+    transform-origin: bottom right;
+  }
+  
+  #toTop:hover::before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+  
+  #toTop::before {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    inset: 0 0 0 0;
+    background: rgba(143, 212, 218,.5);
+    z-index: -1;
+    transition: transform .6s ease-out;
+  }
+  
+   
+  @media (orientation: landscape) {
+    body {
+      grid-auto-flow: column;
+    }
+  }
+  
 /* end footer */
 footer {
     clear:both;
     padding-bottom:500px;
 }
+
+
+
+
+
+
+/* stickman */
+.stick {
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    box-shadow:0px 0px 1px black;
+  }
+  .headerpicture {
+    width:25%;
+    float:left;
+     height:200px;
+    border-right:3px dashed rgba(55,55,55,1);
+    background-color:lightgrey;
+    position:relative;  box-shadow:0px 0px 3px black inset;
+    
+    
+  }
+  .leftarm {
+    width:45px;
+    border:1px solid black;
+    transform:rotate(130deg) translate(21px, 30px);
+      background:black;
+  
+  }
+   
+  .leftleg {
+    width:50px;
+    border:1px solid black;
+    transform:rotate(110deg) translate(79px,7px);  
+      background:black;
+  
+  }
+  .rightleg {
+    width:50px;
+    border:1px solid black;
+    transform:rotate(-110deg) translate(-63px,-40px); 
+    background:black;
+  }
+  .head {
+    position:relative;
+    width:50px;
+    height:40px;
+    border:2px solid black;
+    margin:auto;
+    border-radius:50%;
+    top:11px;
+    background-color:lightgrey;
+  }
+  .lefteye {
+    width:5px;
+    height:5px;
+    border:3px solid black;
+    border-radius:50%;
+    left:30%;
+    top:15px;
+    background:black;
+    transition-duration:.4s;
+  }
+  .body {
+    width:100px;
+    border:1px solid black;
+    transform:rotate(90deg) translate(0px, 50px);
+      background:black;
+  
+   }
+  .righteye {
+    width:5px;
+    height:5px;
+    border:3px solid black;
+    border-radius:50%;
+    top:15px;
+    left:70%;
+    background:black;
+    transition-duration:.4s;
+  
+    
+   }
+  .smile {
+    width:20px;
+    height:5px;
+    border:3px solid black;
+    top:30px;
+    background:black;
+    border-radius:10% 10% 150px 150px;
+    transition:.4s ease-out;
+    cursor:help;
+  }
+  .hidearm {
+    width:15px;
+    background-color:lightgrey;
+    border:5px solid lightgrey;
+    outline:1px solid lightgrey;
+    outline-offset:-.5px;
+    position:absolute;
+    top:68px;
+    left:3px;
+    z-index:1;
+    transform:rotate(130deg); 
+  }
+  .hidearm2 {
+    width:15px;
+    background-color:lightgrey;
+    border:5px solid lightgrey;
+    outline:1px solid lightgrey;
+    outline-offset:-.9px;
+    position:absolute;
+    top:57px;
+    left:9px;
+    z-index:1;
+    transform:rotate(90deg);
+  }
+  .arm {
+    width:45px;
+    border:1px solid black;
+    transform:rotate(-130deg);
+    position:absolute;
+    left:15px;
+    top:85px;
+    animation: wave 1s infinite ease-in-out;
+    animation-play-state:paused;
+    background-color:black;
+    
+    
+  }
+  .headerpicture:hover .arm {
+    animation-play-state:running;
+  }
+  
+  @keyframes wave {
+    0% {transform:rotate(-130deg);top:85px;left:15px;}
+    50% {transform:rotate(-240deg);top:57px;left:12px;width:40px;clip: rect(0px,34px,100px,0px);border-radius:50% 0 0 0;}
+    100% {transform:rotate(-130deg);top:85px;left:15px;}
+  }
+  .headerpicture:hover .smile {
+    top:25px;
+    width:15px;
+  }
+  
+  .lefteye::after {
+   content:"";
+    border:3px solid lightgrey;
+    border-radius:50%;
+    background:lightgrey;
+     height:5px;
+    width:5px;
+    position:absolute;
+    left:-4px;
+    top:5px;
+    color:red;
+    transition-duration:.4s;
+  }
+  .headerpicture:hover .lefteye::after {
+    border-radius: 50% 50% 15% 15% ;
+     height:5px;
+    top:0px;
+  }
+  .headerpicture:hover .righteye {
+    border-radius: 50%  ;
+    height:1px;
+    width:8px;
+    border:1px solid black;
+  }
+  .headcontainer {
+    border:1px solid black;
+     /* width:75%;
+    height:202px; */
+    margin:auto;
+    border-bottom:none;
+    box-shadow:0px 0px 135px lightblue;
+    
+    
+  }
+
+
+
+
+
+
+
+  nav a:nth-child(1) {
+    animation: wiggle 2s linear infinite;
+    
+  }
+  
+  /* Keyframes */
+  @keyframes wiggle {
+    0%, 7% {
+      transform: rotateZ(0);
+    }
+    15% {
+      transform: rotateZ(-15deg);
+    }
+    20% {
+      transform: rotateZ(10deg);
+    }
+    25% {
+      transform: rotateZ(-10deg);
+    }
+    30% {
+      transform: rotateZ(6deg);
+    }
+    35% {
+      transform: rotateZ(-4deg);
+    }
+    40%, 100% {
+      transform: rotateZ(0);
+    }
+  }
+  
+   
+  nav a:nth-child(1) {
+    float: right;
+    margin-left:5px;
+    
+  }
+
+  nav a:nth-child(2) {
+    animation: wiggle 2s linear infinite;
+    animation-delay: .5s;
+  }
+  
+  /* Keyframes */
+  @keyframes wiggle {
+    0%, 7% {
+      transform: rotateZ(0);
+    }
+    15% {
+      transform: rotateZ(-15deg);
+    }
+    20% {
+      transform: rotateZ(10deg);
+    }
+    25% {
+      transform: rotateZ(-10deg);
+    }
+    30% {
+      transform: rotateZ(6deg);
+    }
+    35% {
+      transform: rotateZ(-4deg);
+    }
+    40%, 100% {
+      transform: rotateZ(0);
+    }
+  }
+  
+   
+  nav a:nth-child(2) {
+    float: right;
+    margin-left:5px;
+    
+  }
+
+  nav a:nth-child(3) {
+    animation: wiggle 2s linear infinite;
+    animation-delay:1s;
+  }
+  
+  /* Keyframes */
+  @keyframes wiggle {
+    0%, 7% {
+      transform: rotateZ(0);
+    }
+    15% {
+      transform: rotateZ(-15deg);
+    }
+    20% {
+      transform: rotateZ(10deg);
+    }
+    25% {
+      transform: rotateZ(-10deg);
+    }
+    30% {
+      transform: rotateZ(6deg);
+    }
+    35% {
+      transform: rotateZ(-4deg);
+    }
+    40%, 100% {
+      transform: rotateZ(0);
+    }
+  }
+  
+   
+  nav a:nth-child(3) {
+    float: right;
+    margin-left:5px;
+    
+  }

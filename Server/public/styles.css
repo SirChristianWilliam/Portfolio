@@ -91,8 +91,8 @@ main {}
 }
 
 #proPic {
-    width: 400px;
-    height: 300px;
+    width: 200px;
+    /* height: 300px; */
     border: 1px solid black;
     border-radius: 25% 15px 50% 15px;
 }

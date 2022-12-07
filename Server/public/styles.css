@@ -135,18 +135,19 @@ main {}
 
 
 }
-
-.movieSagas h1 {
+.lastH1 {
     border: 1px solid white;
     background-image: linear-gradient(rgba(66, 102, 149, 0.9), rgba(255, 255, 255, .4));
     border-radius: 50px 50px 0px 0px;
     margin: auto;
     width: 75%;
-    margin-top: 50px;
-    margin-bottom: -50px;
-    padding: 10px;
+    text-align: center;
 
+    margin-top: 50px;
+    /* margin-bottom: -50px; */
+    padding: 10px;
 }
+
 
 .h3additional {
     border: 1px solid white;
@@ -451,7 +452,7 @@ li {
 /* End carousel */
 
 #footerSlideContainer {
-    position: fixed;
+    /* position: fixed; */
     bottom: 0;
     width: 100%;
     overflow: scroll;
@@ -879,6 +880,8 @@ li {
     /* padding-bottom: 200px; */
     /* filter: drop-shadow(0 0 10px #0003); */
     perspective: 100px;
+    margin-top: -15px;
+
 
 }
 
@@ -1061,7 +1064,7 @@ li {
 }
 
 #footerSlideContainer1 {
-    position: fixed;
+    /* position: fixed; */
     bottom: 0;
     width: 100%;
     overflow: scroll;
@@ -1282,7 +1285,7 @@ li {
 }
 
 #footerSlideContainer11 {
-    position: fixed;
+    /* position: fixed; */
     bottom: 0;
     width: 100%;
     overflow: scroll;
@@ -1326,7 +1329,7 @@ li {
 .cara11 {
     width: 75%;
     margin: auto;
-    margin-top: 50px;
+    margin-top: -15px;
     /* outline: 1px solid white; */
     outline-offset: 10px;
     /* margin-bottom: 300px;

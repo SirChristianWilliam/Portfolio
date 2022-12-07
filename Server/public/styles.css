@@ -1286,7 +1286,7 @@ li {
     bottom: 0;
     width: 100%;
     overflow: scroll;
-    z-index: 1;
+    z-index: 2;
 
 }
 
@@ -1311,7 +1311,7 @@ li {
 #footerSlideContent11 {
     width: 100%;
     height: 0px;
-    background: rgba(55, 55, 55, .8);
+    background-image: linear-gradient(rgba(53, 67, 87, 0.9), rgba(255, 255, 255, 0));
     color: #CCCCCC;
     border: none;
     font-family: DejaVuSansBook, Sans-Serif;

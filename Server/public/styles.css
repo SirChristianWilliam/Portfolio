@@ -1286,7 +1286,7 @@ li {
     bottom: 0;
     width: 100%;
     overflow: scroll;
-    z-index: 2;
+    z-index: 5;
 
 }
 

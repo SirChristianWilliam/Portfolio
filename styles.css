@@ -95,7 +95,7 @@ main {}
     /* height: 300px; */
     border: 1px solid black;
     border-radius: 25% 15px 50% 15px;
-}
+ }
 
 #proPic:hover {
     box-shadow: 1px -1px 123px white, 0px 0px 10px rgb(139, 180, 196);

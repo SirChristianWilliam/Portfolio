@@ -464,10 +464,10 @@ li {
     padding: 25px;
     z-index: 1;
 
-    opacity: 0;
+    opacity: .9;
     line-height: 0;
     width: center;
-    background-color: rgb(145 145 145 / 39%);
+    background-color: black;
     text-align: center;
     position: absolute;
     width: 100%;
@@ -520,6 +520,9 @@ li {
     font-size: 20px;
     overflow: scroll;
     padding: 50px;
+    position:relative;
+    top: -20px;
+
     /* background-color:rgba(55,55,55,.2); */
     background-image: linear-gradient(rgba(53, 67, 87, 0.9), rgba(255, 255, 255, 0));
 
@@ -1048,7 +1051,7 @@ li {
     font-size: 25px;
     padding-bottom: 40px;
     width: center;
-    background-color: rgb(145 145 145 / 39%) !important;
+    background-color: black !important;
     text-align: center;
     position: absolute;
     width: 100%;
@@ -1074,13 +1077,13 @@ li {
 
 #footerSlideButton1 {
     height: 25px;
-    top: 0;
+    /* top: 0; */
     padding-bottom: 52px;
     line-height: 2;
 
-    opacity: 0;
+    opacity: .8;
     width: center;
-    background-color: rgb(145 145 145 / 39%) !important;
+    background-color: black !important;
     text-align: center;
     position: absolute;
     width: 100%;
@@ -1269,7 +1272,7 @@ li {
     font-size: 25px;
     padding-bottom: 40px;
     width: center;
-    background-color: rgb(145 145 145 / 39%) !important;
+    background-color:black !important;
     text-align: center;
     position: absolute;
     width: 100%;
@@ -1295,14 +1298,15 @@ li {
 
 #footerSlideButton11 {
     height: 25px;
-    top: 0;
+       /* top: -35px; */
+
     padding-bottom: 52px;
     line-height: 2;
     text-shadow: 0px 0px 1px white, 1px 0px 15px white, 0px -1px 1px white, 1px -1px 15px white;
 
-    opacity: 0;
+    opacity: .8;
     width: center;
-    background-color: rgb(145 145 145 / 39%) !important;
+    background-color: black !important;
     text-align: center;
     position: absolute;
     width: 100%;
@@ -1317,6 +1321,7 @@ li {
     background-image: linear-gradient(rgba(53, 67, 87, 0.9), rgba(255, 255, 255, 0));
     color: #CCCCCC;
     border: none;
+    margin: -10px;
     font-family: DejaVuSansBook, Sans-Serif;
     text-shadow: 0px 0px 3px black, 1px 0px 3px black, 0px 1px 3px black, -1px 0px 3px black, 0px -1px 3px black, 1px -1px 3px black;
 

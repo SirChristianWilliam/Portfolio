@@ -470,6 +470,7 @@ li {
     top: 0;
     padding: 25px;
     z-index: 1;
+    font-size: 25px;
 
     opacity: .9;
     line-height: 0;
@@ -479,8 +480,13 @@ li {
     position: absolute;
     width: 100%;
     margin: auto;
-    border: 1px solid white;
+    outline: 1px solid white;
     cursor: pointer;
+    z-index: 1;
+    text-shadow: 0px 0px 1px white, 1px 0px 15px white, 0px -1px 1px white, 1px -1px 15px white;
+ 
+   
+    
 }
 
 #footerSlideButton:hover {

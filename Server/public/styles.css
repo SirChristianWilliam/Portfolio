@@ -119,11 +119,15 @@ main {}
 }
 
 #missingLink h1 {
-    padding-top: 50px;
-    padding-bottom: 50px;
+    /* padding-top: 50px; */
+    /* padding-bottom: 50px; */
+    text-decoration:underline;
+    color:black;
     text-align: center;
     position: relative;
     top: 50px;
+    padding-bottom: 60px;
+
 }
 
 .person {
@@ -158,6 +162,9 @@ main {}
     margin-top: 50px;
     margin-bottom: -50px;
     padding: 10px;
+    text-shadow: 0px 0px 1px white, 1px 0px 15px white, 0px -1px 1px white, 1px -1px 15px white;
+
+    font-size:30px;
 }
 
 .overPic {
@@ -547,17 +554,23 @@ li {
 
 #threeMoreContainer {
     /* display:flex; */
+    margin-bottom: -60px;
+    padding-top: 32px;
 }
 
 #threeMoreContainer div {
     /* border:1px solid white; */
     /* border-bottom:1px solid white; */
-    border-top: 1px solid white;
+    /* border-top: 1px solid white; */
 
 }
 
 .additional {
     text-align: center;
+    color:black;
+    font-size:30px;
+    text-shadow: 0px 0px 1px white, 1px 0px 15px white, 0px -1px 1px white, 1px -1px 15px white;
+
 }
 
 .moreExamples {
@@ -1391,4 +1404,9 @@ footer h2 a:hover {
 
 .resume {
     text-shadow: none;
+}
+
+nav a:last-child {
+    margin-left: 5px;
+
 }

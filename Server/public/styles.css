@@ -581,11 +581,13 @@ li {
 .moreExamples {
     clear: both;
 }
+
 .moreExamples div {
     width: 100%;
     text-align: center;
     margin: auto;
 }
+
 .moreExamples div:first-child {
     background-image: url('../public/images/calculator.png');
     background-size: contain;
@@ -1344,7 +1346,7 @@ li {
 }
 
 #footerSlideContent11 {
-    width: 100%;
+    width: auto;
     height: 0px;
     background-image: linear-gradient(rgba(53, 67, 87, 0.9), rgba(255, 255, 255, 0));
     color: #CCCCCC;
@@ -1433,10 +1435,12 @@ nav a:last-child {
     #myJourney,
     .cara,
     .h3additional,
-    .cara1 {
+    .cara1,
+    .cara11,
+    .lastH1  {
         width: 100%;
     }
-
+    
     #aboutMe img {
         max-width: 75%;
     }

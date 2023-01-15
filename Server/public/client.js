@@ -6,6 +6,27 @@ $(document).ready(onReady);
 function onReady() {
     $('#moreAboutML').css({ display:'none' });
     $('#moreAboutML1').css({ display:'none' });
+    $('#moreAboutMLq').css({ display:'none' });
+
+    $(function() {
+        var open = false;
+        $('#footerSlideButtonq').click(function() {
+            if(open === false) {
+                $('#footerSlideContentq').animate({ height: '300px' });
+                $(this).css('backgroundPosition', 'bottom left');
+               
+                open = true;
+                $('#moreAboutMLq').css({ display:'block' });
+            } else {
+                $('#footerSlideContentq').animate({ height: '0px' });
+                $(this).css('backgroundPosition', 'top left');
+               
+
+                open = false;
+                $('#moreAboutMLq').css({ display:'none' });
+            } 
+        });		
+    });
 
     $(function() {
         var open = false;

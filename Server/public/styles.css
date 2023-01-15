@@ -60,9 +60,7 @@ main {}
 #myJourney:hover,
 .cara:hover {
     transition: .3s;
-
     background-color: rgb(8 19 19 / 95%);
-
 }
 
 #aboutMe a,
@@ -82,7 +80,10 @@ main {}
 #aboutMe img {
     box-shadow: 0px 0px 5px white;
 }
-
+#aboutMe img:hover   {
+    transform: scale(1.02);
+    transition:.5s;
+}
 #aboutMe p,
 #myJourney p {
     padding: 10px;
@@ -470,7 +471,6 @@ li {
     padding: 25px;
     z-index: 1;
     font-size: 25px;
-
     opacity: .9;
     line-height: 0;
     width: center;
@@ -483,12 +483,35 @@ li {
     cursor: pointer;
     z-index: 1;
     text-shadow: 0px 0px 1px white, 1px 0px 15px white, 0px -1px 1px white, 1px -1px 15px white;
-
-
-
 }
 
 #footerSlideButton:hover {
+    background-color: black;
+    opacity: 1;
+    text-shadow: 0px 0px 1px white, 1px 0px 15px white, 0px -1px 1px white, 1px -1px 15px white;
+
+}
+#footerSlideButtonq {
+    height: 25px;
+    top: 0;
+    padding: 25px;
+    z-index: 1;
+    font-size: 25px;
+    opacity: .9;
+    line-height: 0;
+    width: center;
+    background-color: black;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    margin: auto;
+    outline: 1px solid white;
+    cursor: pointer;
+    z-index: 1;
+    text-shadow: 0px 0px 1px white, 1px 0px 15px white, 0px -1px 1px white, 1px -1px 15px white;
+}
+
+#footerSlideButtonq:hover {
     background-color: black;
     opacity: 1;
     text-shadow: 0px 0px 1px white, 1px 0px 15px white, 0px -1px 1px white, 1px -1px 15px white;
@@ -511,6 +534,14 @@ li {
 }
 
 #moreAboutML {
+    font-size: 20px;
+    overflow: scroll;
+    padding: 50px;
+    /* background-color:rgba(55,55,55,.2); */
+    background-image: linear-gradient(rgba(53, 67, 87, 0.9), rgba(255, 255, 255, 0));
+
+}
+#moreAboutMLq {
     font-size: 20px;
     overflow: scroll;
     padding: 50px;
@@ -1136,7 +1167,9 @@ li {
 #footerSlideText1 {
     background-image: linear-gradient(rgba(53, 67, 87, 0.9), rgba(255, 255, 255, 0));
 }
-
+#footerSlideTextq {
+    background-image: linear-gradient(rgba(53, 67, 87, 0.9), rgba(255, 255, 255, 0));
+}
 
 .carousel11 {
     position: relative;
@@ -1325,6 +1358,14 @@ li {
     z-index: 5;
 
 }
+#footerSlideContainerq {
+    /* position: fixed; */
+    bottom: 0;
+    width: 100%;
+    overflow: scroll;
+    z-index: 5;
+
+}
 
 #footerSlideButton11 {
     height: 25px;
@@ -1356,7 +1397,17 @@ li {
     text-shadow: 0px 0px 3px black, 1px 0px 3px black, 0px 1px 3px black, -1px 0px 3px black, 0px -1px 3px black, 1px -1px 3px black;
 
 }
+#footerSlideContentq {
+    width: auto;
+    height: 0px;
+    background-image: linear-gradient(rgba(53, 67, 87, 0.9), rgba(255, 255, 255, 0));
+    color: #CCCCCC;
+    border: none;
+    margin: -10px;
+    font-family: DejaVuSansBook, Sans-Serif;
+    text-shadow: 0px 0px 3px black, 1px 0px 3px black, 0px 1px 3px black, -1px 0px 3px black, 0px -1px 3px black, 1px -1px 3px black;
 
+}
 #footerSlideText11 {
     background-image: linear-gradient(rgba(53, 67, 87, 0.9), rgba(255, 255, 255, 0));
 }
